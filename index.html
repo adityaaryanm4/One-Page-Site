@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TheRichZone</title>
+<style>
+:root{--accent:#7CFF00;--dark:#111;--light:#f7f7f7}
+*{box-sizing:border-box;margin:0;padding:0;font-family:Georgia,serif}
+body{background:var(--light);color:#222;line-height:1.6}
+header{background:var(--dark);color:white;padding:18px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0}
+header h1{font-size:1.5rem;letter-spacing:1px}
+nav a{color:white;text-decoration:none;margin-left:18px;font-size:0.9rem}
+nav a:hover{color:var(--accent)}
+.hero{padding:80px 20px;text-align:center;background:linear-gradient(120deg,#0f0f0f,#222);color:white}
+.hero h2{font-size:2.5rem;margin-bottom:10px}
+.hero p{opacity:.85;margin-bottom:25px}
+.btn{background:var(--accent);color:black;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:bold}
+.container{max-width:1100px;margin:auto;padding:50px 20px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
+.card{background:white;border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(0,0,0,.08);display:flex;flex-direction:column}
+.card h3{margin:10px 0}
+.price{margin:6px 0 14px;font-weight:bold}
+.card a{margin-top:auto;text-align:center}
+.about{background:white;border-radius:12px;padding:30px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
+footer{text-align:center;padding:25px 10px;background:#111;color:#ccc;margin-top:50px}
+@media(max-width:600px){.hero h2{font-size:2rem}}
+</style>
+<link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+<header>
+<h1>TheRichZone</h1>
+<nav>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+</nav>
+</header>
+<section class="hero">
+<h2>Build Wealth From Mindset</h2>
+<p>Digital resources on productivity, success and financial growth.</p>
+<a class="btn" href="#products">Browse Products</a>
+</section>
+<section id="products" class="container">
+<h2 style="margin-bottom:30px;text-align:center">Products</h2>
+<div class="products">
+<div class="card">
+<h3>Master Dopamine (E‑Book)</h3>
+<p>Understand motivation & focus in modern life.</p>
+<div class="price">$9</div>
+<a class="btn" href="https://gumroad.com/" target="_blank">Buy on Gumroad</a>
+</div>
+<div class="card">
+<h3>Deep Focus Audio</h3>
+<p>Audio training to build concentration habits.</p>
+<div class="price">$7</div>
+<a class="btn" href="https://gumroad.com/" target="_blank">Buy on Gumroad</a>
+</div>
+<div class="card">
+<h3>Wealth Systems Guide</h3>
+<p>Practical systems for productivity & success.</p>
+<div class="price">$12</div>
+<a class="btn" href="https://gumroad.com/" target="_blank">Buy on Gumroad</a>
+</div>
+</div>
+</section>
+<section id="about" class="container">
+<div class="about">
+<h2>About TheRichZone</h2>
+<p>TheRichZone is a digital learning brand focused on mindset, discipline and long‑term wealth creation. Every product is designed to simplify personal growth into practical systems you can apply daily.</p>
+<p style="margin-top:10px"><strong>Founder:</strong> Aditya Aryan</p>
+</div>
+</section>
+<footer>
+© 2026 TheRichZone • All Rights Reserved
+<div style="margin-top:12px;display:flex;justify-content:center;gap:18px">
+<a href="#" aria-label="Instagram" style="color:#7CFF00">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0 2h10c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3zm5 3.5A5.5 5.5 0 1 0 17.5 13 5.51 5.51 0 0 0 12 7.5zm0 2A3.5 3.5 0 1 1 8.5 13 3.5 3.5 0 0 1 12 9.5zm5.75-2.75a1.25 1.25 0 1 0 1.25 1.25 1.25 1.25 0 0 0-1.25-1.25z"/></svg>
+</a>
+<a href="#" aria-label="Twitter" style="color:#7CFF00">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.6 7.54L22 22h-6.828l-5.347-6.997L3.8 22H1l7.05-8.054L2 2h6.914l4.835 6.35L18.244 2z"/></svg>
+</a>
+<a href="#" aria-label="YouTube" style="color:#7CFF00">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.7 31.7 0 0 0 0 12a31.7 31.7 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.7 31.7 0 0 0 24 12a31.7 31.7 0 0 0-.5-5.8zM9.8 15.5v-7L15.8 12l-6 3.5z"/></svg>
+</a>
+</div>
+</footer>
+</body>
+</html>
